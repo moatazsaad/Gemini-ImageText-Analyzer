@@ -11,7 +11,6 @@ import google.generativeai as genai
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Function to load OpenAI model and get responses
-
 def get_gemini_response(input_text, image):
     if image:
         model = genai.GenerativeModel('gemini-pro-vision')
@@ -29,7 +28,6 @@ def get_gemini_response(input_text, image):
     return response.text
 
 # Initialize our Streamlit app
-
 st.set_page_config(page_title="Gemini AI Image and Text Analyzer")
 
 st.title("Gemini AI Image and Text Analyzer")
@@ -68,20 +66,6 @@ if submit:
         st.write(response)
     else:
         st.error("Please provide a question or upload an image.")
-
-# Provide example inputs and images for user guidance
-with st.expander("Examples"):
-    st.write("**Example Prompts:**")
-    st.write("- Describe the image I uploaded.")
-    st.write("- Analyze the scene in the picture.")
-    st.write("- Provide insights on the following image.")
-    
-    st.write("**Example Images:**")
-    example_image_1 = Image.open("example1.jpg")
-    st.image(example_image_1, caption="Example Image 1", use_column_width=True)
-    
-    example_image_2 = Image.open("example2.jpg")
-    st.image(example_image_2, caption="Example Image 2", use_column_width=True)
 
 # Option to clear inputs
 if st.button("Clear Inputs"):
