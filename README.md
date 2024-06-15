@@ -1,17 +1,18 @@
 Gemini AI Image and Text Analyzer
 
+gemini-image-text-analyzer.streamlit.app
+
 Welcome to the Gemini AI Image and Text Analyzer! This Streamlit application allows you to interact with the Gemini AI by providing either a text prompt, an image, or both. The AI generates content based on your input using Google's Generative AI models.
-Features
+Features:
 
-    -Text Prompt Analysis: Enter a text prompt to receive a response from the Gemini AI.
-    -Image Analysis: Upload an image for the AI to analyze and generate a response.
-    -Combined Analysis: Provide both a text prompt and an image to get a comprehensive response.
-     -User-Friendly Interface: Simple and intuitive interface built with Streamlit.
+-Text Prompt Analysis: Enter a text prompt to receive a response from the Gemini AI.
+-Image Analysis: Upload an image for the AI to analyze and generate a response.
+-Combined Analysis: Provide both a text prompt and an image to get a comprehensive response.
+-User-Friendly Interface: Simple and intuitive interface built with Streamlit.
 
-Getting Started
-Prerequisites
+Prerequisites:
 
-Python 3.7 or later
+Python 3.10
 Streamlit
 Pillow
 Python-dotenv
@@ -38,7 +39,6 @@ Running the Application
 Start the Streamlit app:
 
 streamlit run app.py
-
 
 Usage
 
